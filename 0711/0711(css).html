@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="0711.css"> -->
+    <style>
+       p{
+        color: darkblue;
+        /* rbga最後的a是透明度 */
+        background-color: rgba(70,180,140,0.3);
+        letter-spacing: 3ex;
+        /* 1em=網頁預設大小(通常是16) */
+        font-size: 1em;
+       }
+       *{
+        background-color:darkolivegreen;
+       }
+
+       /* 抓取子物件*/
+
+       #red span{
+        /* 空白 = 所有子物件 */
+       }
+       
+       #red>span{
+        /* > = 只有下1層子物件 */
+       }
+       
+       #red+span{
+       /* + = 只有同層物件 */
+       }
+
+       #red.green{
+        /* 抓取「同時有id class一起的」 */
+       }
+
+       #red>span:first-child{
+        /* 子元素span裡的第1個 */
+       }
+
+       #red{
+        background-color: lightblue;
+       }
+       .green{
+        background-color: lightsalmon;
+       }
+       
+    </style>
+</head>
+<body>
+
+    <div id="red" class="green" style="background-color:greenyellow;">id文字
+        
+        <span>span文字</span>
+        <span>span文字5</span>
+        <div>
+            <span>span文字2</span>
+            <span>span文字3</span>
+        </div>
+    </div>
+    <span>span文字4</span>
+
+    <br><hr>
+    <div class="blue">class文字</div>
+
+    <p style="text-decoration:underline;">一般文字</p>
+    <p style="font-weight:bold;">一般文字</p>
+</body>
+</html>

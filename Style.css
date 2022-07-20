@@ -1,0 +1,52 @@
+/*可以連動到HTML檔案的標籤*/
+p{
+    color: brown;
+    /* background-color:rgb(243, 232, 192); */
+    font-size:20px;
+    font-weight: bold;
+    font-family:cursive;
+    width:100px;
+}
+h2{
+    font-size:10px;
+    font-style: italic;
+}
+ul a{
+    color:seagreen;
+}
+a{
+    background-color: lightpink;
+}
+input{
+    background-color: lightgreen;
+}
+/* 連到對應的Class 記得前面有. */
+.A1{
+    color:darkgreen;
+}
+.A2{
+    color: darkblue;
+}
+.B1{
+    background-color: bisque;
+}
+.B2{
+    background-color: thistle;
+}
+/* 對應id */
+#id01{
+    color: orange;
+}
+/* hover:滑鼠移到範圍 */
+p:hover{
+    color: chartreuse;
+    background-color: dimgray;
+}
+ul li:hover{
+    background-color: darkslategray;
+}
+
+/* 全部的東西都改 */
+*{
+    background-color:ivory;
+}
